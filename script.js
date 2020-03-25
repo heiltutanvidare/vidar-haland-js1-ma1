@@ -1,4 +1,9 @@
 // Question 1
+const cat = {
+    complain: function complaining() {
+        console.log("Meow!");
+    }
+};
 
 // Question 2
 

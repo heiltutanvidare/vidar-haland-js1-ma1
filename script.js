@@ -20,7 +20,29 @@ const paragraphs = document.querySelectorAll("p");
 // Question 6
 const resultsContainer = document.querySelector(".results");
 resultsContainer.innerHTML = `<p>New paragraph</p>`;
+
 // Question 7
+const cats = [
+    {
+        name: "Blob",
+        age: 10
+    },
+    {
+        name: "Harold"
+    },
+    {
+        name: "Blurt",
+        age: 21
+    }
+];
+
+function nameLogger(catArray) {
+    for (i = 0; i < catArray.length; i++) {
+        console.log(catArray[i].name);
+    }
+}
+
+nameLogger(cats);
 
 // Question 8
 

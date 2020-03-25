@@ -12,6 +12,7 @@ const heading = document.querySelector("h3");
 heading.style.fontSize = "2em";
 
 // Question 4
+heading.classList.add("subheading");
 
 // Question 5
 

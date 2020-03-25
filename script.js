@@ -15,6 +15,7 @@ heading.style.fontSize = "2em";
 heading.classList.add("subheading");
 
 // Question 5
+const paragraphs = document.querySelectorAll("p");
 
 // Question 6
 

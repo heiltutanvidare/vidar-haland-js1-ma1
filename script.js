@@ -18,7 +18,8 @@ heading.classList.add("subheading");
 const paragraphs = document.querySelectorAll("p");
 
 // Question 6
-
+const resultsContainer = document.querySelector(".results");
+resultsContainer.innerHTML = `<p>New paragraph</p>`;
 // Question 7
 
 // Question 8

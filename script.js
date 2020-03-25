@@ -36,13 +36,13 @@ const cats = [
     }
 ];
 
-function nameLogger(catArray) {
+function logCatNames(catArray) {
     for (i = 0; i < catArray.length; i++) {
         console.log(catArray[i].name);
     }
 }
 
-nameLogger(cats);
+logCatNames(cats);
 
 // Question 8
 

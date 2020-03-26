@@ -45,7 +45,43 @@ function logCatNames(catArray) {
 logCatNames(cats);
 
 // Question 8
+function wrapCatNames(catArray) {
+    let catName = "";
+    for (i = 0; i < catArray.length; i++) {
+        catName += `<h5>${catArray[i].name}</h5>`;
+    }
+
+    return catName;
+}
+
+const catNameHTML = wrapCatNames(cats);
 
 // Question 9
+resultsContainer.innerHTML = catNameHTML;
 
 // Question 10
+function createCatsHTML(catArray) {
+    let catHTML = "";
+    let catAge = "";
+    let catName = "";
+
+    for (i = 0; i < catArray.length; i++) {
+        catAge = "Age unknown";
+
+        if (catArray[i].age) {
+            catAge = catArray[i].age;
+        }
+        catName += catArray[i].name;
+
+        catHTML += `    <div>
+                            <h5>${catName}</h5>
+                            <p>${catAge}</p>
+                        </div>`;
+    }
+
+    return catHTML;
+}
+
+const catsHTML = createCatsHTML(cats);
+
+resultsContainer.innerHTML = catsHTML;

@@ -73,10 +73,10 @@ function createCatsHTML(catArray) {
         }
         catName += catArray[i].name;
 
-        catHTML += `    <div>
-                            <h5>${catName}</h5>
-                            <p>${catAge}</p>
-                        </div>`;
+        catHTML += `<div>
+                        <h5>${catName}</h5>
+                        <p>${catAge}</p>
+                    </div>`;
     }
 
     return catHTML;
